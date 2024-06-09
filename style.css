@@ -6,6 +6,7 @@
 
 body {
     font-size: 62.5%;
+    font-family: "Roboto", sans-serif;
 }
 
 html {
@@ -20,5 +21,75 @@ html {
     width: 782px;
     height: 273px;
     background-color: #EFC684;
+    display: flex;
 }
 
+.ticket-text {
+    font-size: 2em;
+}
+
+.underline {
+    border-bottom: 1px solid black;
+}
+
+/*LEFT-LEFT SIDE*/
+
+.ticket-left {
+    width: 558px;
+    display: flex;
+    border-right: 2px dashed #DB0808;
+}
+
+.ticket-left__left {
+    width: 50%;
+    margin: 26px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ticket-container {
+    width: 206px;
+    margin-bottom: 39px;
+}
+
+.ticket-title {
+    font-size: 5.5em;
+    line-height: 64px;
+}
+
+.ticket-options {
+    margin: 36px 0 0 7px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ticket-option {
+    width: 82px;
+    height: 44px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*LEFT-RIGHT SIDE*/
+
+
+
+.ticket-info__double {
+    margin-top: 27px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ticket-info__hour {
+    margin-top: 26px;
+}
+
+.ticket-info__number {
+    margin-top: 30px;
+}
+
+.ticket-barcode {
+    margin-top: 40px;
+}

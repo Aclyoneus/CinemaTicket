@@ -3,30 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Cinema Ticket</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="ticket">
-        <p class="ticket-left">
-        <div class="ticket-left__left">
-            <p class="ticket-title">CINEMA TICKET</p>
-            <div class="ticket-options">
-                <p class="ticket-option">VIP</p>
-                <p class="ticket-price">$10</p>
-            </div>
-        </div>
-        <div class="ticket-left__right">
-            <div class="ticket-info">
-                <p class="ticket-info__hour">08:00 PM</p>
-                <div class="ticket-info__double">
-                    <p class="ticket-info__gate">GATE: 03</p>
-                    <p class="ticket-info__seat">SEAT: B43</p>
+        <div class="ticket-left">
+            <div class="ticket-left__left">
+                <div class="ticket-container">
+                    <p class="ticket-title">CINEMA TICKET</p>
+                    <div class="ticket-options">
+                        <p class="ticket-option ticket-option__type ticket-text">VIP</p>
+                        <p class="ticket-option ticket-option__price ticket-text">$10</p>
+                    </div>
                 </div>
-                <p class="ticket-info__number">TICKET NO: 103752</p>
             </div>
-            <div class="ticket-barcode">
-                <div class="ticket-barcode__lines"></div>
-                <p class="ticket-barcode__number">(01)95012345678903(3103)000123</p>
+            <div class="ticket-left__right">
+                <div class="ticket-info">
+                    <p class="ticket-info__hour ticket-text underline">08:00 PM</p>
+                    <div class="ticket-info__double underline">
+                        <p class="ticket-info__gate ticket-text">GATE: 03</p>
+                        <p class="ticket-info__seat ticket-text">SEAT: B43</p>
+                    </div>
+                    <p class="ticket-info__number ticket-text underline">TICKET NO: 103752</p>
+                </div>
+                <div class="ticket-barcode">
+                    <img class="ticket-barcode__img" src="img/g2993.svg">
+                </div>
             </div>
         </div>
         <div class="ticket-right">
