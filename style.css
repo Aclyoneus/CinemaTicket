@@ -22,6 +22,7 @@ html {
     height: 273px;
     background-color: #EFC684;
     display: flex;
+    border-radius: 10px;
 }
 
 .ticket-text {
@@ -74,8 +75,6 @@ html {
 
 /*LEFT-RIGHT SIDE*/
 
-
-
 .ticket-info__double {
     margin-top: 27px;
     display: flex;
@@ -92,4 +91,43 @@ html {
 
 .ticket-barcode {
     margin-top: 40px;
+}
+
+/*RIGHT SIDE*/
+
+.ticket-right {
+    height: 100%;
+    width: 224px;
+}
+
+.popcorn-elements {
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 205px;
+    left: 970px;
+}
+
+.popcorn-box {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-1.62deg);
+}
+
+.popcorn-element__one {
+    margin-top: 10px;
+    transform: rotate(-70deg);
+}
+
+.popcorn-element__two {
+    transform: rotate(-40deg);
+}
+
+.popcorn-element__three {
+    margin-top: 20px;
 }
