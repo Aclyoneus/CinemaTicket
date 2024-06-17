@@ -98,36 +98,42 @@ html {
 .ticket-right {
     height: 100%;
     width: 224px;
-}
-
-.popcorn-elements {
-    width: 130px;
     display: flex;
-    justify-content: space-between;
-    position: absolute;
-    top: 205px;
-    left: 970px;
 }
 
 .popcorn-box {
-    z-index: 1;
     height: 100%;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.popcorn-box__img {
+    position: relative;
+    z-index: 1;
+    top: 38px;
+    left: 40px;
     transform: rotate(-1.62deg);
 }
 
+.popcorn-elements {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    bottom: 80px;
+    transition: bottom .6s;
+}
+
+.popcorn-box:hover .popcorn-elements {
+    bottom: 195px;
+}
+
 .popcorn-element__one {
-    margin-top: 10px;
+    margin-right: 5px;
     transform: rotate(-70deg);
 }
 
-.popcorn-element__two {
-    transform: rotate(-40deg);
+.popcorn-element__three {
+    margin-left: 5px;
+    transform: rotate(20deg);
 }
 
-.popcorn-element__three {
-    margin-top: 20px;
-}
